@@ -14,5 +14,5 @@ app.get("/list", (req, res) => {
 });
 
 // Porta do container (use a mesma no EasyPanel)
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
